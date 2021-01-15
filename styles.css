@@ -44,16 +44,33 @@ a:visited {
 	background: rgb(248, 245, 245);
 }
 
+/* The Google logo and the search bar */
+
 .googlelogo {
 	position: relative;
+	justify-self: center;
+	margin-left: 30px;
 }
-
-.feel-lucky {
+.searchbar {
+	justify-self: center;
+	height: 30px;
+	width: 400px;
 }
 
 .searchbar:hover {
 	webkit-box-shadow: 3px 3px 5px 6px rgb(100, 100, 100);
+	border: 2px solid black;
 }
 
-.searchbar {
+/* The buttons below the Google Logo  */
+
+.searchbuttongroup {
+	float: left;
+	width: 300px;
+	margin-left: 100px;
+	justify-self: center;
+	color: black;
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(255, 255, 255);
+	cursor: pointer;
 }
