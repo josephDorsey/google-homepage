@@ -24,24 +24,31 @@ a:visited {
 	padding: 14px;
 }
 
+/* The buttons at the to of the page */
+
+.item4 {
+}
 #header {
 	display: grid;
 }
 
 #middle-content {
-	position: relative;
 	display: grid;
-	align-items: center;
+	bottom: 100;
 }
 
 #footer {
 	position: absolute;
 	bottom: 0;
-	width: 100%;
-	height: 40px;
-	padding: 5px;
+	left: 0;
+	right: 0;
+	margin: 0px;
+	padding: 0px;
+	min-width: 100%;
+	max-width: 100%;
 	font-size: 15px;
 	background: rgb(248, 245, 245);
+	border-top: 1px solid lightgray;
 }
 
 /* The Google logo and the search bar */
@@ -49,17 +56,21 @@ a:visited {
 .googlelogo {
 	position: relative;
 	justify-self: center;
-	margin-left: 30px;
 }
 .searchbar {
 	justify-self: center;
-	height: 30px;
-	width: 400px;
+	background-image: url("magnifying-glass-1976105_1280.png"), url("googlemicrophone.png");
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+	background-size: 20px;
+	height: 40px;
+	width: 450px;
+	border-radius: 20px;
+	border: 2px solid lightgray;
 }
 
 .searchbar:hover {
-	webkit-box-shadow: 3px 3px 5px 6px rgb(100, 100, 100);
-	border: 2px solid black;
+	box-shadow: 0 4px 8px 0 rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(167, 167, 167, 0.19);
 }
 
 /* The buttons below the Google Logo  */
@@ -69,8 +80,6 @@ a:visited {
 	width: 300px;
 	margin-left: 100px;
 	justify-self: center;
-	color: black;
-	background-color: rgb(255, 255, 255);
-	border: 2px solid rgb(255, 255, 255);
+	background-color: transparent;
 	cursor: pointer;
 }

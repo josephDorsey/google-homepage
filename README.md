@@ -17,3 +17,37 @@ I still plan on working on the middle-content, but if there's time I will also w
     -rounding out the search bar
     -adding a shadow element to the hover function of the search bar
     -how to put the magnifying glass and the input voice in the search bar
+
+# 1/18/2021 Update 3
+
+First let's address what was able to be worked on in this current update! 
+
+1. I was able to round the search bar (.searchbar)
+    - rounded it to 20px;
+
+2. I was able to add a shadow element to the hover function of the search bar (.searchbar:hover)
+    - box-shadow: 0 4px 8px 0 rgba (136, 136, 136,0.2), 0 6px 20px 0 rgba (167, 167, 167, 0.19);
+
+3. learned how to add the magnifying glass and input voice icon in the search bar
+    -first I added two background images:
+        1. url ("magnifying-glass-1976105_1280.png")
+            - then I changed the background position to left center
+  
+        2. url ("googlemicrophone.png")
+            - then I changed the background position to right center
+    - made sure the background-repeat was set to:
+      - no-repeat
+
+4. Next I updated the #footer div, I changed the positioning on it and added a border-top. 
+    - I added left & right: 0;
+    - had a min-width and max-width of 100% to stretch the footer on the bottom page
+    - added a border-top
+    - added green leaf icon to link on the footer
+
+Also added a new link to CSS emojis in html
+
+Ok thats the end of this update, here are the next things that I may try in the next update:
+
+1. How to space out the buttons on the top on bottom rows to their own grid areas
+2. Add the app drawer and profile photo emoji
+3. How to bring the google logo and middle-content div to the center of the page
