@@ -22,13 +22,14 @@ I still plan on working on the middle-content, but if there's time I will also w
 
 First let's address what was able to be worked on in this current update! 
 
-1. I was able to round the search bar (.searchbar)
+1. I was able to round the search bar (.searchbar class)
     - rounded it to 20px;
 
 2. I was able to add a shadow element to the hover function of the search bar (.searchbar:hover)
     - box-shadow: 0 4px 8px 0 rgba (136, 136, 136,0.2), 0 6px 20px 0 rgba (167, 167, 167, 0.19);
 
 3. learned how to add the magnifying glass and input voice icon in the search bar
+    
     -first I added two background images:
         1. url ("magnifying-glass-1976105_1280.png")
             - then I changed the background position to left center
@@ -38,7 +39,8 @@ First let's address what was able to be worked on in this current update!
     - made sure the background-repeat was set to:
       - no-repeat
 
-4. Next I updated the #footer div, I changed the positioning on it and added a border-top. 
+4. Next I updated the #footer div, I changed the positioning on it and added a border-top.
+    
     - I added left & right: 0;
     - had a min-width and max-width of 100% to stretch the footer on the bottom page
     - added a border-top
@@ -51,3 +53,11 @@ Ok thats the end of this update, here are the next things that I may try in the 
 1. How to space out the buttons on the top on bottom rows to their own grid areas
 2. Add the app drawer and profile photo emoji
 3. How to bring the google logo and middle-content div to the center of the page
+
+# 1/21/2021 Update 4
+
+Fixed a lot in this update. I learned how to space out the buttons on the top and bottoms rows and to their own areas. I added the app drawer and profile picture to the links above. I also centered the google logo & searchbar  (or so I hope) to the center of the page.
+
+
+
+There are a few things I would like to fix but that's perfectionism and I should be happy with how this has turned out so far! I feel like I really learned a lot about this project and I am looking forward to the next ones.

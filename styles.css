@@ -24,21 +24,52 @@ a:visited {
 	padding: 14px;
 }
 
-/* The buttons at the to of the page */
-
-.item4 {
-}
+/* The buttons at the top and bottom of the page */
 #header {
-	display: grid;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	max-width: 100%;
+	font-size: 15px;
+}
+.about,
+.store {
+	float: left;
+}
+.gmail,
+.images,
+.app,
+.profile {
+	float: right;
+}
+.appdrawer {
+	height: auto;
+	width: 25px;
+}
+.authorphoto {
+	height: 38px;
+	width: 35px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+/* The div containers */
+
+#main {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	min-width: 960px;
 }
 
 #middle-content {
-	display: grid;
-	bottom: 100;
+	position: fixed;
+	top: 50%;
+	left: 50%;
 }
-
+/* FOOTER INFO  */
 #footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -47,26 +78,55 @@ a:visited {
 	min-width: 100%;
 	max-width: 100%;
 	font-size: 15px;
-	background: rgb(248, 245, 245);
+	height: 40px;
+	background-color: #f5f5f5ee;
 	border-top: 1px solid lightgray;
 }
-
+.rightfooter {
+	float: right;
+	position: relative;
+}
+.leftfooter {
+	float: left;
+	position: relative;
+}
+.middlefooter {
+	float: left;
+	justify-self: center;
+	position: fixed;
+	top: 10;
+	bottom: 15;
+	left: 45%;
+}
 /* The Google logo and the search bar */
 
 .googlelogo {
-	position: relative;
 	justify-self: center;
+	margin: 0;
+	position: fixed;
+	width: 280px;
+	height: auto;
+	top: 25%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 }
+
 .searchbar {
-	justify-self: center;
-	background-image: url("magnifying-glass-1976105_1280.png"), url("googlemicrophone.png");
+	background-image: url("magnifying-glass-1976105_1280.png"), url("1200px-Google_mic.svg.png");
 	background-repeat: no-repeat;
-	background-position: left center, right center;
-	background-size: 20px;
-	height: 40px;
-	width: 450px;
-	border-radius: 20px;
-	border: 2px solid lightgray;
+	background-position: 20px, 450px;
+	background-size: 20px, 14px;
+	height: 43px;
+	width: 480px;
+	top: 31%;
+	left: 50%;
+	text-indent: 40px;
+	outline: none;
+	border-radius: 50px;
+	border: 1px solid lightgray;
+	position: fixed;
+	transform: translate(-50%, 50%);
 }
 
 .searchbar:hover {
@@ -75,11 +135,52 @@ a:visited {
 
 /* The buttons below the Google Logo  */
 
-.searchbuttongroup {
-	float: left;
-	width: 300px;
-	margin-left: 100px;
-	justify-self: center;
-	background-color: transparent;
+#searchbuttongroup {
+	top: 41%;
+	position: fixed;
+	border: none;
 	cursor: pointer;
+	text-decoration: none;
+}
+button {
+	border: none;
+	background-color: transparent;
+	font-size: 14.5px;
+	font-family: Arial, Helvetica, sans-serif;
+	outline-offset: 12px;
+}
+
+.button1 {
+	float: left;
+	margin-left: -145px;
+	font-size: 30px;
+	width: 130px;
+	padding-bottom: 6px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	background-color: #f5f5f5ee;
+	outline-offset: 12px;
+}
+.button2 {
+	float: right;
+	margin-right: -130px;
+	font-size: 30px;
+	width: 130px;
+	padding-left: 6px;
+	padding-bottom: 6px;
+	padding-right: 6px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	background-color: #f5f5f5ee;
+}
+
+li {
+	display: inline;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
